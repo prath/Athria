@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, HashRouter } from 'react-router-dom';
+// Import Styles
 import './App.scss';
+// Load Dummy Data
+import NavData from './_DummyData/Nav';
+// Import Components
+import MainNav from './Components/MainNav';
+import Home from './Pages/Home';
+import Stuff from './Pages/Stuff';
+import Contact from './Pages/Contact';
 
 class App extends Component {
     render() {
+
+        // Dummy Data Stored
+        const links = NavData;
+
         return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <p>
-                        Edit <code>src/App.js</code> and save to reload.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
+            /**
+             * HashRouter needs to enclose the main container in which the navigation and content area will be loaded
+             */
+            <HashRouter>
+                <header>
+                    <MainNav theLinks={links} />
                 </header>
-            </div>
+                {/* This is the content area, the content will be loaded here */}
+                <main id="content">
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/stuff" component={Stuff}/>
+                    <Route path="/contact" component={Contact}/>
+                </main>
+            </HashRouter>
         );
     }
 }
