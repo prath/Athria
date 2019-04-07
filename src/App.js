@@ -10,9 +10,9 @@ import Contact from './Pages/Contact';
 class App extends Component {
     render() {
         return (
-            
             <Router>
                 <Switch>
+                    {/* TODO: need more info about layouting, find out about Master layout and router */}
                     <Route exact path="/" component={Home}/>
                     <Route path="/stuff" component={Stuff}/>
                     <Route path="/contact" component={Contact}/>
