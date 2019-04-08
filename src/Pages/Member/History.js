@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from 'react';
 
-class Contact extends Component {
+class History extends Component {
     render() {
         return (
             <Fragment>
-                <section>
-                    <h1>Contact</h1>
-                </section>
+                <p>
+                    History yeah
+                </p>
             </Fragment>
         )
     }
 }
 
-export default Contact;
+export default History;

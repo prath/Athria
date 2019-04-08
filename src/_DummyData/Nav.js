@@ -9,8 +9,8 @@ var NavData =
         link: "/stuff"
     }, 
     {
-        label: "Contact",
-        link: "/contact"
+        label: "Member",
+        link: "/member"
     }
 ]
 
