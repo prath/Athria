@@ -1,12 +1,9 @@
 import React, { Component, Fragment } from 'react';
-// Import Components
-import Header from '../Components/Header';
 
 class Home extends Component {
     render() {
         return (
             <Fragment>
-                <Header />
                 <section>
                     <h1>Home</h1>
                     <article>

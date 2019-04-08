@@ -6,7 +6,7 @@ var NavData =
     }, 
     {
         label: "Stuff",
-        link: "/Stuff"
+        link: "/stuff"
     }, 
     {
         label: "Contact",
