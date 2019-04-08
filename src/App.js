@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 // Import Styles
 import './App.scss';
-// Import Components
-import MainLayout from './Pages/Layouts/MainLayout';
-import UserLayout from './Pages/Layouts/UserLayout';
-import NotFound from './Pages/NotFound';
 
-const layout = {
-    '/': MainLayout,
-    '/stuff': MainLayout,
-    '/contact': UserLayout
-}
+// Import Layouts
+import DefaultLayout from './Pages/Layouts/DefaultLayout';
+import UserLayout from './Pages/Layouts/UserLayout';
+
+// Import Pages
+import Home from './Pages/Home';
+import Stuff from './Pages/Stuff';
+import Contact from './Pages/Contact';
+import NotFound from './Pages/NotFound';
 
 class App extends Component {
     render() {
         return (
             <Router>
-                <Route path="*" render={layoutPicker} />
+                <Switch>
+                    <DefaultLayout exact path="/" component={Home} />
+                    <DefaultLayout path="/stuff" component={Stuff} />
+                    <UserLayout path="/contact" component={Contact} />
+                    <Route path="*" component={NotFound} />
+                </Switch>
             </Router>
         );
     }
-}
-
-const layoutPicker = (props) => {
-    let Layout = layout[props.location.pathname];
-    return Layout ? < Layout / > : < NotFound / > ;
 }
 
 export default App;
