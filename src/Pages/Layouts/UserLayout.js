@@ -4,8 +4,6 @@ import { Route } from 'react-router-dom';
 // Import Components
 import Header from '../../Components/Header';
 import MemberNav from '../../Components/MemberNav';
-// import History from '../Member/History';
-// import Account from '../Member/Account';
 /**
  * User Layout
  * @param {} param0 
@@ -13,8 +11,6 @@ import MemberNav from '../../Components/MemberNav';
  * The User layout and the route that will direct which component to load.
  * 
  */
-// TODO: add a nested route for sub-page in user/member page for instance.
-// TODO: find out how to route member id or post id, or something similar to /member/212
 const UserLayout = ({ component: Component, ...rest }) => {
     return (
         <Fragment>
@@ -35,7 +31,7 @@ const UserLayout = ({ component: Component, ...rest }) => {
  * Here will be rendered the content of each page that uses Default Layout
  */
 export const Content = ({ children }) => {
-    // console.log(children);
+    // console.log(children.props.match.params);
     return (
         <Fragment>
             <MemberNav />

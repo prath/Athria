@@ -26,6 +26,7 @@ class App extends Component {
                     <UserLayout exact path="/member" component={Member} />
                     <UserLayout path="/member/history" component={History} />
                     <UserLayout path="/member/account" component={Account} />
+                    <UserLayout path="/member/:params" component={Account} />
                     <Route path="*" component={NotFound} />
                 </Switch>
             </Router>
