@@ -9,7 +9,10 @@ import Header from '../../Components/Header';
  * @param {} param0 
  * 
  * The User layout and the route that will direct which component to load.
+ * 
  */
+// TODO: add a nested route for sub-page in user/member page for instance.
+// TODO: find out how to route member id or post id, or something similar to /member/id/212
 const UserLayout = ({ component: Component, ...rest }) => {
     return (
         <Fragment>
