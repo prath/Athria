@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 
 class Stuff extends Component {
     render() {
-        console.log(this.props);
         return (
             <Fragment>
                 <section>
