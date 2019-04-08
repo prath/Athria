@@ -21,12 +21,17 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
+                    {/* Default Layout Pages */}
                     <DefaultLayout exact path="/" component={Home} />
                     <DefaultLayout path="/stuff" component={Stuff} />
+
+                    {/* User Layout Pages */}
                     <UserLayout exact path="/member" component={Member} />
                     <UserLayout path="/member/history" component={History} />
                     <UserLayout path="/member/account" component={Account} />
                     <UserLayout path="/member/:params" component={Account} />
+
+                    {/* 404 */}
                     <Route path="*" component={NotFound} />
                 </Switch>
             </Router>
