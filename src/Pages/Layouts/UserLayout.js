@@ -6,7 +6,7 @@ import Header from '../../Components/Header';
 import MemberNav from '../../Components/MemberNav';
 /**
  * User Layout
- * @param {} param0 
+ * @param {component, props}, 
  * 
  * The User layout and the route that will direct which component to load.
  * 
@@ -26,7 +26,7 @@ const UserLayout = ({ component: Component, ...rest }) => {
 
 /**
  * Content Component
- * @param {} param0 
+ * @param {children} 
  * 
  * Here will be rendered the content of each page that uses Default Layout
  */
