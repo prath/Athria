@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 // Import Components
 import Header from '../../Components/Header';
 import MemberNav from '../../Components/MemberNav';
+
 /**
  * User Layout
  * @param {component, props}, 
@@ -15,9 +16,9 @@ const UserLayout = ({ component: Component, ...rest }) => {
     return (
         <Fragment>
             <Header />
-            <Route {...rest} render={ matchProps => (
+            <Route {...rest} render={ match => (
                 <Content>
-                    <Component {...matchProps} />
+                    <Component {...match} />
                 </Content>
             )} />
         </Fragment>
@@ -31,7 +32,6 @@ const UserLayout = ({ component: Component, ...rest }) => {
  * Here will be rendered the content of each page that uses Default Layout
  */
 export const Content = ({ children }) => {
-    // console.log(children.props.match.params);
     return (
         <Fragment>
             <MemberNav />

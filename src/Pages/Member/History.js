@@ -4,9 +4,7 @@ class History extends Component {
     render() {
         return (
             <Fragment>
-                <p>
-                    History yeah
-                </p>
+                <p>History content</p>
             </Fragment>
         )
     }

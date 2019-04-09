@@ -4,9 +4,7 @@ class Account extends Component {
     render() {
         return (
             <Fragment>
-                <p>
-                    Account yeah
-                </p>
+                <p>Account content</p>
             </Fragment>
         )
     }

@@ -6,7 +6,7 @@ import Header from '../../Components/Header';
 
 /**
  * Default Layout
- * @param {} param0 
+ * @param {component, props} param0 
  * 
  * The default layout and the route that will direct which component to load.
  */
@@ -14,9 +14,9 @@ const DefaultLayout = ({ component: Component, ...rest }) => {
     return (
         <Fragment>
             <Header />
-            <Route {...rest} render={ matchProps => (
+            <Route {...rest} render={ match => (
                 <Content>
-                    <Component {...matchProps} />
+                    <Component {...match} />
                 </Content>
             )} />
         </Fragment>
@@ -25,14 +25,17 @@ const DefaultLayout = ({ component: Component, ...rest }) => {
 
 /**
  * Content Component
- * @param {} param0 
+ * @param {children} param0 
  * 
  * Here will be rendered the content of each page that uses Default Layout
  */
 export const Content = ({ children }) => {
     return (
         <Fragment>
-            {children}
+            <section>
+                <h1>{children.type.name}</h1>
+                {children}
+            </section>
         </Fragment>
     )
 }
