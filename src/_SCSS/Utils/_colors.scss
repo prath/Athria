@@ -1,13 +1,11 @@
-// =============================================================================
-// * COLOR PALETTES
+// =============================================
+// * COLORS
 // *
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
-// =============================================================================
+// * Color scheme  
+// =============================================
 
-//*===============================================================================
-// [ COLORS ]
-//===============================================================================*/
-
+// * [COLOR PALETTE]
+// =============================================
 $hopbush: #c69;
 $bouquet: #b37399;
 $venus: #998099;
@@ -22,16 +20,16 @@ $pale-sky: #6b717f;
 $midnight-blue: #036;
 $black: #000;
 
-//* [Main Color Palettes]
-//============================================================*/
+// * [MAIN COLOR PALETTE]
+// =============================================
 $color-primary: $hopbush;
 $color-secondary: $bouquet;
 $color-accent: $patina;
 $color-shadow: rgba($black, .125);
 $color-note: #666;
 
-//* [Common Colors]
-//============================================================*/
+// * [COMMON COLORS]
+// =============================================
 $color-background: $white;
 $color-background-shade: $iron;
 $color-background-invert: $hopbush;
@@ -42,25 +40,25 @@ $color-text-heading: $regent-grey;
 $color-text-invert: rgba($color-background, .75);
 $color-text-strong-invert: $color-background;
 
-//* [Links]
-//============================================================*/
+// * [LINKS]
+// =============================================
 $color-link: $color-primary;
 $color-link-hover: $midnight-blue;
 $color-link-visited: $bouquet;
 
-//* [Codes]
-//============================================================*/
+// * [CODES]
+// =============================================
 $color-code: #333;
 $color-code-background: #f3f3f3;
 $color-pre: #d4d4d4;
 $color-pre-background: #333;
 
-//* [Selections]
-//============================================================*/
+// * [SELECTIONS]
+// =============================================
 $color-selection: #b3d4fc;
 
-//* [Messages]
-//============================================================*/
+// * [MESSAGES]
+// =============================================
 $color-message: #f4ecbb;
 $color-success: #2cde2c;
 $color-warning: #cf8600;

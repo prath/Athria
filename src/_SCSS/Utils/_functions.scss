@@ -1,0 +1,65 @@
+// =============================================
+// * FUNCTIONS
+// *
+// * Utility functions 
+// =============================================
+
+// * [UNIT CONVERSION]
+// =============================================
+
+// *----------[Strip Unit]----------*/
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+} 
+// used to strip units from values.
+
+// *----------[Px to Em]----------*/
+@function px-to-em($target, $context: $base-font-size) {
+    @if not unitless($target) {
+        $target: strip-units($target);
+    }
+
+    @if not unitless($context) {
+        $context: strip-units($context);
+    }
+
+    @if $target==0 {
+        @return 0
+    }
+
+    @return $target / $context+0em;
+}
+
+// *----------[Px to Rem]----------*/
+@function px-to-rem($target, $context: $base-font-size) {
+    @if not unitless($target) {
+        $target: strip-units($target);
+    }
+
+    @if not unitless($context) {
+        $context: strip-units($context);
+    }
+
+    @if $target==0 {
+        @return 0
+    }
+
+    @return $target / $context+0rem;
+}
+
+// *----------[Em to px]----------*/
+@function em-to-px($target, $context: $base-font-size) {
+    @if not unitless($target) {
+        $pxval: strip-units($target);
+    }
+
+    @if not unitless($context) {
+        $base: strip-units($context);
+    }
+
+    @if $target==0 {
+        @return 0
+    }
+
+    @return $target * $context+0px;
+}
