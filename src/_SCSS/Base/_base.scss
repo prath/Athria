@@ -1,0 +1,85 @@
+// =============================================================================
+// * BASE STYLES
+// *
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// =============================================================================
+
+//*===============================================================================
+// [ BASE STYLES ]
+//===============================================================================*/
+
+:root {
+    font-size: $base-font-size;
+}
+
+html {
+    background-color: $color-background;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+* {
+
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+//* [Body Styles]
+//============================================================*/
+body {
+    color: $color-text;
+    font-family: $font-family-default;
+    font-size: 1rem;
+    line-height: 1.25;
+    min-height: 100%;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+//* [Link Styles]
+//============================================================*/
+a {
+    text-decoration: none;
+    background: transparent;
+    color: $color-link;
+    transition: color .2s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+//*-----[Link Inside Paragraph]-----*/
+p {
+    a {}
+}
+
+//* [Image Styles]
+//============================================================*/
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+//* [Heading Styles]
+//============================================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-display;
+    font-weight: normal;
+}
+
+//* [Code Styles]
+//============================================================*/
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
