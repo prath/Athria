@@ -1,0 +1,8 @@
+@import 'button';
+@import '../../_SCSS/Utils/colors';
+
+.btn-secondary {
+    background-color: $color-secondary;
+    color: $black;
+    @extend %btn;
+}

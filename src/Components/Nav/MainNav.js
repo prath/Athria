@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 // Load Dummy Data
-import NavMemberData from '../_DummyData/NavMember';
+import NavData from '../../_DummyData/Nav';
 
-class MemberNav extends Component {
+class MainNav extends Component {
     render() {
 
         // Dummy Data Stored
-        const links = NavMemberData;
+        const links = NavData;
         
         const navList = links.map((val, key) => {
             return (
@@ -25,4 +25,4 @@ class MemberNav extends Component {
     }
 }
 
-export default MemberNav
+export default MainNav

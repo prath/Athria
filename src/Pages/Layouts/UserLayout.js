@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 
 // Import Components
-import Header from '../../Components/Header';
-import MemberNav from '../../Components/MemberNav';
+import Header from '../../Components/Header/Header';
+import MemberNav from '../../Components/Nav/MemberNav';
 
 /**
  * User Layout
