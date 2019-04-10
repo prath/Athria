@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 // Import Components
 import MainNav from '../Nav/MainNav';
-import ButtonPrimary from '../Button/ButtonPrimary';
-import ButtonSecondary from '../Button/ButtonSecondary';
+import Button from '../Button/Button';
 
 class Header extends Component {
     render(){
         return(
             <header>
                 <MainNav />
-                <ButtonPrimary text="Submit" name="whatever" type="button" />
-                <ButtonSecondary text="Submit" name="whatever" type="button" />
+                <Button>
+                    Button
+                </Button>
             </header>
         )
     }

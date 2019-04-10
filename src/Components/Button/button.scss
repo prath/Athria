@@ -1,0 +1,29 @@
+@import '../../_SCSS/Utils/colors';
+
+.btn {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+
+    &-big{
+        padding: 10px;
+    }
+
+    &-small {
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    &-primary {
+        background-color: $color-primary;
+        color: $white;
+    }
+
+    &-secondary {
+        background-color: $color-secondary;
+        color: $white;
+    }
+}

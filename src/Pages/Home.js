@@ -1,12 +1,21 @@
 import React, { Component, Fragment } from 'react';
-import ButtonPrimary from '../Components/Button/ButtonPrimary';
+import Button, { ButtonVariant, ButtonSize, ButtonType } from '../Components/Button/Button';
 
 class Home extends Component {
     render() {
         return (
             <Fragment>
                 <p>Home content</p>
-                <ButtonPrimary text="Another Button" name="another" type="button" />
+                <Button
+                    variant={ButtonVariant.SECONDARY}
+                    size={ButtonSize.BIG}
+                    type={ButtonType.BUTTON}
+                    // disabled
+                    classname="clear"
+                    onClick= {() => {return true;}}
+                >
+                Button Two
+                </Button>
             </Fragment>
         )
     }

@@ -1,8 +1,0 @@
-@import 'button';
-@import '../../_SCSS/Utils/colors';
-
-.btn-primary {
-    background-color: $color-primary;
-    color: $white;
-    @extend %btn;
-}
