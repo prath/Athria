@@ -27,7 +27,12 @@ class Button extends Component {
         const isSizeExist = size;
         const isAddClassExist = classname;
         // css classes
-        const className = Cn(`${prefix}-btn`, `${prefix}-btn-${variant}`, {[`${prefix}-btn-${size}`]: isSizeExist}, {[`${classname}`]: isAddClassExist});
+        const className = Cn(
+            `${prefix}-btn`, 
+            `${prefix}-btn-${variant}`, 
+            {[`${prefix}-btn-${size}`]: isSizeExist}, 
+            {[`${classname}`]: isAddClassExist}
+        );
         
         return(
             <button className={className} type={type} {...rest}>{children}</button>
