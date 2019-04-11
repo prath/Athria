@@ -1,3 +1,9 @@
+/**
+ * MEMBER VIEW LAYOUT
+ * 
+ * @author Pratama Hasriyan <pratama@hasriyan.com>
+ */
+
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 

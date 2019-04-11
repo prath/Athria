@@ -1,14 +1,13 @@
 // =============================================
-// * GLOBAL STYLES
+// * MEMBER NAV COMPONENT STYLES
 // *
-// * The global style that be used in the app 
+// * Only contain nav styles. no other styles
+// * allowed
 // *
 // * @author Pratama Hasriyan <pratama@hasriyan.com>
 // =============================================
 
 // * [IMPORTS]
 // =============================================
-@import '_SCSS/Utils/variables';
-@import '_SCSS/Utils/colors';
-@import '_SCSS/Utils/typography';
-@import '_SCSS/Base/base';
+@import '../../_SCSS/Utils/variables';
+@import '../../_SCSS/Utils/colors';

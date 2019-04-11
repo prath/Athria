@@ -1,20 +1,27 @@
-import React, { Component, Fragment } from 'react';
-import Button, { ButtonVariant, ButtonSize, ButtonType } from '../Components/Button/Button';
+/**
+ * HOME VIEW
+ * 
+ * @author Pratama Hasriyan <pratama@hasriyan.com>
+ */
 
+import React, { Component, Fragment } from 'react';
+
+// Import Components
+import Button from '../Components/Button/Button';
+
+/**
+ * Default Class
+ */
 class Home extends Component {
     render() {
         return (
             <Fragment>
                 <p>Home content</p>
-                <Button
-                    variant={ButtonVariant.SECONDARY}
-                    size={ButtonSize.BIG}
-                    type={ButtonType.BUTTON}
-                    // disabled
-                    classname="clear"
-                    onClick= {() => {return true;}}
-                >
-                Button Two
+                <Button 
+                    variant="warning" 
+                    size="large" 
+                    classname="clear">
+                    Button Two
                 </Button>
             </Fragment>
         )

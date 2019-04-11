@@ -1,3 +1,9 @@
+/**
+ * DEFAULT LAYOUT VIEW
+ * 
+ * @author Pratama Hasriyan <pratama@hasriyan.com>
+ */
+
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 
@@ -6,7 +12,7 @@ import Header from '../../Components/Header/Header';
 
 /**
  * Default Layout
- * @param {component, props} param0 
+ * @param {component, props} 
  * 
  * The default layout and the route that will direct which component to load.
  */
@@ -25,7 +31,7 @@ const DefaultLayout = ({ component: Component, ...rest }) => {
 
 /**
  * Content Component
- * @param {children} param0 
+ * @param {children} 
  * 
  * Here will be rendered the content of each page that uses Default Layout
  */

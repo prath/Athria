@@ -1,68 +1,60 @@
+/**
+ * BUTTON COMPONENT
+ * 
+ * @author Pratama Hasriyan <pratama@hasriyan.com>
+ */
+
 import React, { Component } from 'react';
-import './button.scss';
 import PropTypes from 'prop-types';
-// import cx from 'classnames';
+import cn from 'classnames';
+
+// import prefix and settings
+import Settings from '../../Settings.js'
+
+// load styles
+import './button.scss';
 
 /**
- * BUTTON OPTIONS.
+ * Default Class
  */
-// Variant
-export const ButtonVariant = {
-    PRIMARY: "primary", 
-    SECONDARY: "secondary", 
-    DANGER: "danger", 
-    WARNING: "warning"
-};
-
-// Sizes
-export const ButtonSize ={
-    BIG: "big",
-    MEDIUM: "medium",
-    SMALL: "small",
-    TINY: "tiny"
-}
-
-export const ButtonType = {
-    BUTTON: 'button',
-    RESET: 'reset',
-    SUBMIT: 'submit'
-}
-
 class Button extends Component {
     render() {
         const {children, variant, type, size, classname, ...rest} = this.props;
 
+        // prefix
+        const { prefix } = Settings;
+        // check props exist
+        const isSizeExist = size;
+        const isAddClassExist = classname;
         // css classes
-        let classes = `btn btn-${variant}`;
-        // check if size defined
-        if (size) {
-            classes += ` btn-${size}`
-        }
-        // check if additional classes defined
-        if (classname) {
-            classes += ` ${classname}`;
-        }
+        const className = cn(`${prefix}-btn`, `${prefix}-btn-${variant}`, {[`${prefix}-btn-${size}`]: isSizeExist}, {[`${classname}`]: isAddClassExist});
         
         return(
-            <button className={classes} type={type} {...rest}>{children}</button>
+            <button className={className} type={type} {...rest}>{children}</button>
         )
     }
 }
 
+/**
+ * Type checking
+ */
 Button.propTypes = {
-    variant: PropTypes.string.isRequired,
+    variant: PropTypes.oneOf(['primary','secondary','warning']).isRequired,
     name: PropTypes.string,
-    type: PropTypes.string.isRequired,
-    size: PropTypes.string,
+    type: PropTypes.oneOf(['button', 'submit', 'reset']).isRequired,
+    size: PropTypes.oneOf(['tiny','small','large']),
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
     children: PropTypes.node.isRequired,
     classname: PropTypes.string
 }
 
+/**
+ * Default type
+ */
 Button.defaultProps = {
-    variant: ButtonVariant.PRIMARY,
-    type: ButtonType.BUTTON,
+    variant: 'primary',
+    type: 'button',
 }
 
 export default Button;

@@ -1,3 +1,9 @@
+/**
+ * MAIN APP LOADS AND ROUTES
+ * 
+ * @author Pratama Hasriyan <pratama@hasriyan.com>
+ */
+
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -16,6 +22,9 @@ import NotFound from './Pages/NotFound';
 import History from './Pages/Member/History';
 import Account from './Pages/Member/Account';
 
+/**
+ * Default Class
+ */
 class App extends Component {
     render() {
         return (
