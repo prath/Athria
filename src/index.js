@@ -11,6 +11,3 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-// TODO: load index.scss and organize the basic styles and utilities.
-// TODO: Prepare for scss organization and imports so it's modular and also focused on components
