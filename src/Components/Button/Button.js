@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import cn from 'classnames';
+import Cn from 'classnames';
 
 // import prefix and settings
 import Settings from '../../Settings.js'
@@ -27,7 +27,7 @@ class Button extends Component {
         const isSizeExist = size;
         const isAddClassExist = classname;
         // css classes
-        const className = cn(`${prefix}-btn`, `${prefix}-btn-${variant}`, {[`${prefix}-btn-${size}`]: isSizeExist}, {[`${classname}`]: isAddClassExist});
+        const className = Cn(`${prefix}-btn`, `${prefix}-btn-${variant}`, {[`${prefix}-btn-${size}`]: isSizeExist}, {[`${classname}`]: isAddClassExist});
         
         return(
             <button className={className} type={type} {...rest}>{children}</button>
