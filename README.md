@@ -52,3 +52,6 @@ The directories and files are following this structure:
     |___ etc
 
 ```
+
+## More Info
+`Please refer to README file available in each folder`
