@@ -12,7 +12,7 @@ The directories and files are following this structure:
 |___root project files (readme, package.json,etc)
 |   
 |___[public]
-|   |___- index.html (and favicon, etc)  
+|   |___ index.html (and favicon, etc)  
 |   
 |___[src]
     |
