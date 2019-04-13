@@ -34,8 +34,6 @@ class App extends Component {
                     <DefaultLayout exact path="/" component={Home} />
                     <DefaultLayout path="/posts" component={Posts} />
                     <DefaultLayout path="/post/:params" component={Post} />
-                    {/* <DefaultLayout path="/Signin" component={SignIn} /> */}
-                    {/* <DefaultLayout path="/signup" component={SignUp} /> */}
 
                     {/* User Layout Pages */}
                     <UserLayout exact path="/member" component={Member} />
