@@ -35,7 +35,7 @@ class Button extends Component {
         );
         
         return(
-            <button className={className} type={type} {...rest}>{children}</button>
+            <button className={className} type={type} {...rest}>{children+' '+rest.answer}</button>
         )
     }
 }
