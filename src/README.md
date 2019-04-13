@@ -1,3 +1,3 @@
-## SOURCE DIRECTORY
+## Source
 
 Almost everything happens here. 
