@@ -35,9 +35,4 @@ I use this starter as a barebone for a new static react app project that uses CR
                 - Account.js
             - Home.js
             - NotFound.js
-
-
-
-
-
 ```
