@@ -9,40 +9,46 @@ This project is a React Starter Project to be used for my personal work. It also
 The directories and files are following this structure:
 ```
 [project]
-|   root project files (readme, package.json,etc)
+|___root project files (readme, package.json,etc)
 |   
-|   [public]
-|       - index.html (and favicon, etc)  
+|___[public]
+|   |___- index.html (and favicon, etc)  
 |   
-|   [src]
-|   |   [_DummyData] (put your dummy data here)
-|   |   |   - DummyDataFile.js
-|   |
-|   |   [_SCSS] (your global, settings & vars _scss will be here)
-|   |   |   - variables.scss (IMPORTANT: set your prefix here and src/settings.js)
-|   |   |   - colors.scss
-|   |   |   - etc
-|   |
-|   |   [Components] (your components will be here)
-|   |   |   [Button]
-|   |   |   |   - Button.js
-|   |   |   |   - button.scss (component spesific styles)
-|   |   |   [other components]
-|   |
-|   |   [Pages] (layout, pages/views are here)
-|   |   |   [Layout] (here is the master layouts)
-|   |   |   |   - DefaultLayout.js
-|   |   |   |   - Userlayout.js
-|   |   |   |   - etc.
-|   |   |   [Member] (member area/specific area for specific parts of the views)
-|   |   |   |   - Member.js
-|   |   |   |   - Account.js
-|   |   |   - Home.js
-|   |   |   - NotFound.js
-|   |
-|   |   - settings.js (site setting here. e.g. css prefix)
-|   |   - app.js
-|   |   - index.js
-|   |   - etc
+|___[src]
+    |
+    |___[_DummyData] (put your dummy data here)
+    |   |___ DummyDataFile.js
+    |
+    |___[_SCSS] (your global, settings & vars _scss will be here)
+    |   |___ variables.scss (IMPORTANT: set your prefix here and src/settings.js)
+    |   |___ colors.scss
+    |   |___ etc
+    |
+    |___[Components] (your components will be here)
+    |   |
+    |   |___[Button]
+    |   |   |___ Button.js
+    |   |   |___ button.scss (component spesific styles)
+    |   |
+    |   |___[other components]
+    |
+    |___[Pages] (layout, pages/views are here)
+    |   |
+    |   |___[Layout] (here is the master layouts)
+    |   |   |___ DefaultLayout.js
+    |   |   |___ Userlayout.js
+    |   |   |___ etc.
+    |   |   
+    |   |___[Member] (member area/specific area for specific parts of the views)
+    |   |   |___ Member.js
+    |   |   |___ Account.js
+    |   |   
+    |   |___ Home.js
+    |   |___ NotFound.js
+    |
+    |___ settings.js (site setting here. e.g. css prefix)
+    |___ app.js
+    |___ index.js
+    |___ etc
 
 ```
