@@ -5,7 +5,10 @@
 
 This project is a React Starter Project to be used for my personal work. It also a playground to me to learn about React.
 
-I use this starter as a barebone for a new static react app project that uses CRA. The directories and files are following this structure:
+I use this starter as a barebone for a new static react app project that uses CRA. 
+
+## Directories & Files Structure
+The directories and files are following this structure:
 ```
 [project]
     root project files (readme, package.json,etc)
@@ -17,7 +20,7 @@ I use this starter as a barebone for a new static react app project that uses CR
         [_DummyData] (put your dummy data here)
             - DummyDataFile.js
         [_SCSS] (your global, settings & vars _scss will be her)
-            - variables.scss
+            - variables.scss (IMPORTANT: set your prefix here and src/settings.js)
             - colors.scss
             - etc
         [Components] (your components will be here)
@@ -35,4 +38,9 @@ I use this starter as a barebone for a new static react app project that uses CR
                 - Account.js
             - Home.js
             - NotFound.js
+        - settings.js (site setting here. e.g. css prefix)
+        - app.js
+        - index.js
+        - etc
+
 ```
