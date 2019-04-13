@@ -16,10 +16,10 @@ import UserLayout from './Pages/Layouts/UserLayout';
 
 // Import Pages
 import Home from './Pages/Home';
-import Stuff from './Pages/Stuff';
+import Posts from './Pages/Posts';
+import Post from './Pages/Post';
 import Member from './Pages/Member/Member';
 import NotFound from './Pages/NotFound';
-import History from './Pages/Member/History';
 import Account from './Pages/Member/Account';
 
 /**
@@ -32,13 +32,14 @@ class App extends Component {
                 <Switch>
                     {/* Default Layout Pages */}
                     <DefaultLayout exact path="/" component={Home} />
-                    <DefaultLayout path="/stuff" component={Stuff} />
+                    <DefaultLayout path="/posts" component={Posts} />
+                    <DefaultLayout path="/post/:params" component={Post} />
+                    {/* <DefaultLayout path="/Signin" component={SignIn} /> */}
+                    {/* <DefaultLayout path="/signup" component={SignUp} /> */}
 
                     {/* User Layout Pages */}
                     <UserLayout exact path="/member" component={Member} />
-                    <UserLayout path="/member/history" component={History} />
                     <UserLayout path="/member/account" component={Account} />
-                    <UserLayout path="/member/:params" component={Account} />
 
                     {/* 404 */}
                     <Route path="*" component={NotFound} />

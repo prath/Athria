@@ -42,7 +42,6 @@ export const Content = ({ children }) => {
         <Fragment>
             <MemberNav />
             <section>
-                <h1>{children.type.name}</h1>
                 {children}
             </section>
         </Fragment>

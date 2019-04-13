@@ -16,6 +16,7 @@ class Home extends Component {
     render() {
         return (
             <Fragment>
+                <h1>Home</h1>
                 <p>Home content</p>
                 <Button 
                     variant="warning" 

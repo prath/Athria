@@ -13,6 +13,7 @@ class Account extends Component {
     render() {
         return (
             <Fragment>
+                <h1>Account & Settings</h1>
                 <p>Account content</p>
             </Fragment>
         )

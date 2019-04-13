@@ -39,7 +39,6 @@ export const Content = ({ children }) => {
     return (
         <Fragment>
             <section>
-                <h1>{children.type.name}</h1>
                 {children}
             </section>
         </Fragment>

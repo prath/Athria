@@ -5,8 +5,8 @@ var NavData =
         link: "/"
     }, 
     {
-        label: "Stuff",
-        link: "/stuff"
+        label: "Posts",
+        link: "/posts"
     }, 
     {
         label: "Member",

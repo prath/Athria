@@ -5,10 +5,6 @@ var NavMemberData = [{
     {
         label: "Account",
         link: "/member/account"
-    },
-    {
-        label: "History",
-        link: "/member/history"
     }
 ]
 

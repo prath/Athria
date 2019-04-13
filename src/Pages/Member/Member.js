@@ -13,6 +13,7 @@ class Member extends Component {
     render() {
         return (
             <Fragment>
+                <h1>Member</h1>
                 <p>Member dashboard</p>
             </Fragment>
         )
