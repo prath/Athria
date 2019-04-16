@@ -15,7 +15,8 @@ class Post extends Component {
         super();
         this.state = {
             post: [],
-            isLoading: true
+            isLoading: true,
+            isLoggedin: true
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -55,6 +56,7 @@ class Post extends Component {
                 <h1>Post Page Single</h1>
                 <p>{this.state.post}</p>
                 <Button onClick={this.handleClick} answer={this.state.post}>Set</Button>
+                <Conditional isLoggedin={this.state.isLoggedin} />
             </Fragment>
         )
     }
@@ -68,6 +70,16 @@ class Post extends Component {
 const Preloader = (props) => {
     return (
         (props.isLoading) ? <span>Loading</span> : ''
+    )
+}
+
+/**
+ * Conditional render
+ * @param {boolean} isLoggedin 
+ */
+const Conditional = (props) => {
+    return (
+        (props.isLoggedin) ? <div>Logged in</div> : <div>Logged out</div>
     )
 }
 
